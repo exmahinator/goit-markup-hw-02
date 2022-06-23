@@ -155,9 +155,6 @@
     text-transform: uppercase;
     color: var(--secondary-text, #212121);
 }
-.advantages-text {
-    line-height: 1.71;
-}
 
 /* What we are doing */
 .performance-title, .team-title {
