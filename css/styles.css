@@ -70,6 +70,7 @@
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 14px;
+    line-height: 1.71;
     letter-spacing: 0.03em;
     background-color: var(--body-background, #ffffff);
     color: var(--main-text, #757575);
@@ -95,7 +96,7 @@
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
-    line-height: 31px;
+    line-height: 1.19;
     
 }
 .logo-left {
@@ -108,7 +109,7 @@
 /* Navigation menu */
 .nav-link, .contacts-link {
     font-weight: 500;
-    line-height: 16px;
+    line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--secondary-text, #212121);
 }
@@ -124,7 +125,7 @@
 .hero-title {
     font-weight: 900;
     font-size: 44px;
-    line-height: 60px;
+    line-height: 1.36;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -134,7 +135,7 @@
     cursor: pointer;
     font-weight: 700;
     font-size: 16px;
-    line-height: 30px;
+    line-height: 1.88;
     display: flex;
     align-items: center;
     text-align: center;
@@ -150,19 +151,19 @@
 .advantages-accent {
     font-weight: 700;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
     text-transform: uppercase;
     color: var(--secondary-text, #212121);
 }
 .advantages-text {
-    line-height: 24px;
+    line-height: 1.71;
 }
 
 /* What we are doing */
 .performance-title, .team-title {
     font-weight: 700;
     font-size: 36px;
-    line-height: 42px;
+    line-height: 1.16;
     text-align: center;
     color: var(--secondary-text, #212121);
 }
@@ -176,7 +177,7 @@
 }
 .members-name, .members-title {
     font-size: 16px;
-    line-height: 19px;
+    line-height: 1.18;
     text-align: center;
 }
 .members-name {
@@ -193,7 +194,7 @@
     color: var(--footer-logo, #ffffff);
 }
 .address-link {
-    line-height: 24px;
+    line-height: 1.71;
     color: var(--footer-text, #ffffff);
 }
 .address-transparent {
@@ -209,7 +210,7 @@
     cursor: pointer;
     font-weight: 500;
     font-size: 16px;
-    line-height: 26px;
+    line-height: 1.62;
     text-align: center;
     background-color: var(--portfolio-button, #F5F4FA);
     color: var(--secondary-text, #212121);
@@ -220,13 +221,13 @@
 .portfolio-company {
     font-weight: 700;
     font-size: 18px;
-    line-height: 36px;
+    line-height: 2;
     letter-spacing: 0.06em;
     color: var(--secondary-text, #212121);
 }
 .portfolio-product {
     font-size: 16px;
-    line-height: 30px;
+    line-height: 1.87;
 }
 
 /* --------------------------------------States-------------------------------------- */
