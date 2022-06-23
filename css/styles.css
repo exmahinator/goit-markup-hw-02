@@ -66,7 +66,7 @@
 }
 
 /* Body */
-.body-index, .body-portfolio {
+.body {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     letter-spacing: 0.03em;
@@ -86,12 +86,9 @@
     font-style: normal;
 }
 
-/* --------------------------------------Main part-------------------------------------- */
+/* --------------------------------------Index-------------------------------------- */
 
 /* Header and navigation */
-/* .header {
-} */
-
 /* Logo header*/
 .logo {
     font-family: 'Raleway', sans-serif;
@@ -116,10 +113,10 @@
 }
 
 /* Hero */
-.hero, .footer {
+.hero {
     background-color: var(--hero-background, #2F303A);
 }
-.hero-header {
+.hero-title {
     font-weight: 900;
     font-size: 44px;
     line-height: 60px;
@@ -142,26 +139,21 @@
 }
 
 /* Our advantages */
-.advantages-header {
+.advantages-title {
     visibility: hidden;
 }
-.advantages-item-header {
+.advantages-accent {
     font-weight: 700;
     line-height: 16px;
     text-transform: uppercase;
     color: var(--secondary-text, #212121);
 }
-
-
 .advantages-text {
     line-height: 24px;
 }
 
 /* What we are doing */
-/* .we-do {
-
-} */
-.we-do-header, .team-header {
+.performance-title, .team-title {
     font-weight: 700;
     font-size: 36px;
     line-height: 42px;
@@ -187,6 +179,9 @@
 }
 
 /* Footer */
+.footer {
+    background-color: var(--hero-background, #2F303A);
+}
 /* Logo footer*/
 .logo-footer {
     color: var(--footer-logo, #ffffff);
@@ -201,7 +196,7 @@
 
 /* --------------------------------------Portfolio-------------------------------------- */
 
-.portfolio-header {
+.portfolio-title {
     visibility: hidden;
 }
 .portfolio-button {
@@ -216,14 +211,14 @@
 .portfolio-item {
     background-color: var(--portfolio-item, #ffffff);
 }
-.portfolio-item-header {
+.portfolio-company {
     font-weight: 700;
     font-size: 18px;
     line-height: 36px;
     letter-spacing: 0.06em;
     color: var(--secondary-text, #212121);
 }
-.portfolio-item-text {
+.portfolio-product {
     font-size: 16px;
     line-height: 30px;
 }
