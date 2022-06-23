@@ -96,14 +96,13 @@
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
-    line-height: 1.19;
-    
-}
-.logo-left {
-    color: var(--accent, #2196F3);
+    line-height: 1.19;  
 }
 .logo-header {
     color: var(--header-logo, #000000);
+}
+.logo-accent {
+    color: var(--accent, #2196F3);
 }
 
 /* Navigation menu */
