@@ -10,7 +10,7 @@
 
 :root {
     /* Accent color, hero button color, left part of logo color, active state portfolio button */
-    --accent-color: #2196F3;
+    --accent: #2196F3;
 
     /* Main text color */
     --main-text: #757575;
@@ -19,46 +19,49 @@
     --secondary-text: #212121;
 
     /* Main body color */
-    --main-body: #ffffff;
+    --body-background: #ffffff;
 
     /* Right part of logo color in header */
-    --right-part-logo-header: #000000;
+    --header-logo: #000000;
 
-    /* Right part of logo color in footer */
-    --right-part-logo-footer: #ffffff;
-
-    /* Hero, footer background color */
-    --hero-footer-background: #2F303A;
+    /* Hero background color */
+    --hero-background: #2F303A;
 
     /* Hero header and button text color */
-    --hero-header-and-button: #ffffff;
+    --hero-text: #ffffff;
 
     /* Hero button hover and focus background color */
-    --hero-button-hover-background: #F5F4FA;
+    --hero-state-background: #F5F4FA;
 
     /* Hero button hover and focus text color */
-    --hero-button-hover-text: #212121;
+    --hero-state-text: #212121;
 
     /* Team section background color */
     --team-background: #F5F4FA;
 
     /* Team item background color */
-    --team-item-background: #ffffff;
+    --team-item: #ffffff;
 
     /* Portfolio button background color */
     --portfolio-button: #F5F4FA;
 
     /* Portfolio button hover and focus text color */
-    --portfolio-button-hover-text: #ffffff;
+    --portfolio-state: #ffffff;
 
     /* Portfolio item background color */
-    --portfolio-item-background: #ffffff;
+    --portfolio-item: #ffffff;
+    
+    /* Footer background */
+    --footer-background: #2F303A;
+
+    /* Right part of logo color in footer */
+    --footer-logo: #ffffff;
     
     /* Footer text color */
-    --footer-address-text: #ffffff;
+    --footer-text: #ffffff;
 
     /* Footer text transparent color */
-    --footer-address-text-transparent: rgba(255, 255, 255, 0.6);
+    --footer-transparent: rgba(255,255,255,0.6);
 
 }
 
@@ -67,7 +70,7 @@
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     letter-spacing: 0.03em;
-    background-color: var(--main-body, #ffffff);
+    background-color: var(--body-background, #ffffff);
     color: var(--main-text, #757575);
 }
 
@@ -80,6 +83,7 @@
 /* Reset link */
 .link-reset {
     text-decoration: none;
+    font-style: normal;
 }
 
 /* --------------------------------------Main part-------------------------------------- */
@@ -93,10 +97,10 @@
     font-family: 'Raleway', sans-serif;
 }
 .logo-left {
-    color: var(--accent-color, #2196F3);
+    color: var(--accent, #2196F3);
 }
-.logo-right {
-    color: var(--right-part-logo-header, #000000);
+.logo-header {
+    color: var(--header-logo, #000000);
 }
 
 /* Navigation menu */
@@ -113,16 +117,16 @@
 
 /* Hero */
 .hero, .footer {
-    background-color: var(--hero-footer-background, #2F303A);
+    background-color: var(--hero-background, #2F303A);
 }
-.hero-title {
+.hero-header {
     font-weight: 900;
     font-size: 44px;
     line-height: 60px;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: var(--hero-header-and-button, #ffffff);
+    color: var(--hero-text, #ffffff);
 }
 .hero-button {
     cursor: pointer;
@@ -133,8 +137,8 @@
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
-    background-color: var(--accent-color, #2196F3);
-    color: var(--hero-header-and-button, #ffffff);
+    background-color: var(--accent, #2196F3);
+    color: var(--hero-text, #ffffff);
 }
 
 /* Our advantages */
@@ -149,7 +153,7 @@
 }
 
 
-.advantages-item-text {
+.advantages-text {
     line-height: 24px;
 }
 
@@ -170,30 +174,29 @@
     background-color: var(--team-background, #F5F4FA);
 }
 .team-members {
-    background-color: var(--team-item-background, #ffffff);
+    background-color: var(--team-item, #ffffff);
 }
-.team-members-name, .team-members-title {
+.members-name, .members-title {
     font-size: 16px;
     line-height: 19px;
     text-align: center;
 }
-.team-members-name {
+.members-name {
     font-weight: 500;
     color: var(--secondary-text, #212121);
 }
 
 /* Footer */
 /* Logo footer*/
-.logo-right-footer {
-    color: var(--right-part-logo-footer, #ffffff);
+.logo-footer {
+    color: var(--footer-logo, #ffffff);
 }
 .address-link {
-    font-style: normal;
     line-height: 24px;
-    color: var(--footer-address-text, #ffffff);
+    color: var(--footer-text, #ffffff);
 }
-.reach-out-address {
-    color: var(--footer-address-text-transparent, rgba(255, 255, 255, 0.6));
+.address-transparent {
+    color: var(--footer-transparent, rgba(255,255,255,0.6))
 }
 
 /* --------------------------------------Portfolio-------------------------------------- */
@@ -211,7 +214,7 @@
     color: var(--secondary-text, #212121);
 }
 .portfolio-item {
-    background-color: var(--portfolio-item-background, #ffffff);
+    background-color: var(--portfolio-item, #ffffff);
 }
 .portfolio-item-header {
     font-weight: 700;
@@ -231,7 +234,7 @@
 
 /* Hover, focus */
 .nav-link:hover, .nav-link:focus, .contacts-link:hover, .contacts-link:focus, .address-link:hover, .address-link:focus {
-    color: var(--accent-color, #2196F3);
+    color: var(--accent, #2196F3);
 }
 
 /* Between those comments will be "active" state for links */
@@ -242,13 +245,13 @@
 
 /* Hover, focus */
 .hero-button:hover, .hero-button:focus {
-    background-color: var(--hero-button-hover-background, #F5F4FA);
-    color: var(--hero-button-hover-text, #212121);
+    background-color: var(--hero-state-background, #F5F4FA);
+    color: var(--hero-state-text, #212121);
 }
 
 .portfolio-button:hover, .portfolio-button:focus {
-    background-color: var(--accent-color, #2196F3);
-    color: var(--portfolio-button-hover-text, #ffffff);
+    background-color: var(--accent, #2196F3);
+    color: var(--portfolio-state, #ffffff);
 }
 
 /* Between those comments will be "active" state for buttons */
