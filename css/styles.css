@@ -132,11 +132,11 @@
     color: var(--hero-text, #ffffff);
 }
 .hero-button {
+    font-family: inherit;
     cursor: pointer;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-    display: flex;
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
@@ -207,6 +207,7 @@
     visibility: hidden;
 }
 .portfolio-button {
+    font-family: inherit;
     cursor: pointer;
     font-weight: 500;
     font-size: 16px;
