@@ -237,6 +237,9 @@
 }
 
 /* Between those comments will be "active" state for links */
+.current-active {
+    color: var(--accent, #2196F3);
+}
 /* Between those comments will be "active" state for links */
 
 /* Between those comments will be "visited" state for buttons */
